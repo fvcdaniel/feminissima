@@ -1,4 +1,4 @@
-set :rvm_ruby_string, '1.9.3-p194'
+set :rvm_ruby_string, '1.9.3-p429'
 
 set :application, "Feminissima Modas"
 set :repository,  "git://github.com/fvcdaniel/feminissima.git"
