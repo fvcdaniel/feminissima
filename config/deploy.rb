@@ -14,6 +14,7 @@ role :db,  "feminissimamodas.com.br"
 default_run_options[:pty] = true  # Must be set for the password prompt
                                   # from git to work
 set :scm, "git"
+set :scm_username, "fvcdaniel"
 set :user, "deployer"  # The server's user for deploys
 #set :scm_passphrase, "password"  # The deploy user's password
 set :ssh_options, { :forward_agent => true }
