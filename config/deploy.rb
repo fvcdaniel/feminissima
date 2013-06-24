@@ -24,6 +24,8 @@ after :deploy, 'deploy:database'
 namespace :deploy do
     task :database, :roles => :app do
         run "cd #{deploy_to}/current && which gem"
+        run "cd #{deploy_to}/current && gem install bundler"
+        run "cd #{deploy_to}/current && bundle update"
         #run "cd #{deploy_to}/current && gem install rails -v '3.2.13' --no-ri --no-rdoc && gem install bundler && bundle install"
         run "cd #{deploy_to}/current && gem list --local"
         run "cp #{deploy_to}/shared/database.yml #{current_path}/config/"
