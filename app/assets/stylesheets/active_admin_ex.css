@@ -1,0 +1,33 @@
+table.dashboard > tbody > tr > td {
+  display:block;
+}
+
+.view_link{
+	background: url('/img_pub/show-icon.png') no-repeat;
+    height: 24px;
+    width: 24px;
+    text-indent: -9999px;
+    overflow: hidden;
+    display: inline-block;
+        white-space:nowrap;
+}
+
+.edit_link{
+	background: url('/img_pub/edit-icon.png') no-repeat;
+    height: 24px;
+    width: 24px;
+    text-indent: -9999px;
+    overflow: hidden;
+    display: inline-block;
+        white-space:nowrap;
+}
+
+.delete_link{
+	background: url('/img_pub/remove-icon.png') no-repeat;
+    height: 24px;
+    width: 24px;
+    text-indent: -9999px;
+    overflow: hidden;
+    display: inline-block;
+        white-space:nowrap;
+}
