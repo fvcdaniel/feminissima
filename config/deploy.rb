@@ -1,3 +1,5 @@
+set :rvm_ruby_string, '1.9.3-p194'
+
 set :application, "Feminissima Modas"
 set :repository,  "git://github.com/fvcdaniel/feminissima.git"
 
@@ -23,14 +25,8 @@ set :deploy_to, "/var/www/feminissimamodas.com.br"
 after :deploy, 'deploy:database'
 namespace :deploy do
     task :database, :roles => :app do
-        run "cd #{deploy_to}/current && which gem"
-        run "cd #{deploy_to}/current && gem install bundler"
-        run "cd #{deploy_to}/current && bundle update"
-        #run "cd #{deploy_to}/current && gem install rails -v '3.2.13' --no-ri --no-rdoc && gem install bundler && bundle install"
-        run "cd #{deploy_to}/current && gem list --local"
-        run "cp #{deploy_to}/shared/database.yml #{current_path}/config/"
-        run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake db:migrate"
-        run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake assets:precompile"
+        #run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake db:migrate"
+        #run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake assets:precompile"
     end
 end
 
