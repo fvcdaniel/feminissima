@@ -28,8 +28,8 @@ namespace :deploy do
     task :database, :roles => :app do
     	run "cp #{deploy_to}/shared/database.yml #{current_path}/config/"
     	run "cp #{deploy_to}/shared/secret_token.rb #{current_path}/config/initializers/secret_token.rb"
-        #run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake db:migrate"
-        #run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake assets:precompile"
+        run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake db:migrate"
+        run "cd #{deploy_to}/current && RAILS_ENV=production bundle exec rake assets:precompile"
     end
 end
 
