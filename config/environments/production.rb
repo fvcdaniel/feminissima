@@ -66,5 +66,5 @@ Feminissima2::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   #for wysihtml5
-  config.assets.precompile += %w(active_admin.js active_admin.css active_admin/print.css)
+  config.assets.precompile += %w(active_admin.js active_admin.css active_admin/print.css active_admin_ex.css)
 end
