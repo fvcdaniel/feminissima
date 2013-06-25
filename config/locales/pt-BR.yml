@@ -1,4 +1,12 @@
 pt-BR:
+  devise:
+    failure:
+      admin_user:
+        invalid: "Usuário inválido"
+        unauthenticated: "Acesso restrito apenas à usuários autenticados"
+    sessions:
+      admin_user:
+        signed_in: "Usuário logado com sucesso"
   date:
     abbr_day_names:
     - Dom
