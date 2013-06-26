@@ -12,6 +12,8 @@ gem "meta_search",    '>= 1.1.0.pre'
 gem 'activeadmin-dragonfly', github: 'stefanoverna/activeadmin-dragonfly'
 gem 'activeadmin-wysihtml5', github: 'stefanoverna/activeadmin-wysihtml5'
 
+gem "paperclip", "~> 3.0"
+
 group :production do
   gem 'mysql2'
 end
