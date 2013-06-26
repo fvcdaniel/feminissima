@@ -12,4 +12,6 @@ class Product < ActiveRecord::Base
   has_many :albums
   has_one :gallery
 
+  validates_presence_of :name, :title, :price, :categoria, :cover_image
+
 end
