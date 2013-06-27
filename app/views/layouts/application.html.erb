@@ -8,7 +8,66 @@
 </head>
 <body>
 
-<%= yield %>
+	<div class="container menu-bar">
+		<div class="row">
+			<div class="twelve columns">
+				<ul>
+				
+					<li><a href="/">Início</a></li>
+				
+					<li><a href="/pages/faq">FAQ</a></li>
+				
+					<li><a href="/pages/contact-us">Contato</a></li>
+				
+					<li><a href="/blogs/news">Blog</a></li>
+									
+					<li><a id="customer_login_link" href="/account/login">Login</a></li>
+
+          			<li><a id="customer_register_link" href="/account/register">Cadastro</a></li>
+											
+				</ul>
+			</div>			
+		</div>
+	</div>
+	
+
+	<!-- 
+		CONTAINER TOP SECTION
+	-->
+	<div class="container top-section">
+
+		<div class="row">
+			<div class="nine columns branding">
+				<h1 id="logo"><a title="Home" href="/">
+				
+					<img alt="Crafter's Tees" src="/img_pub/logo-full.png"></a>
+				
+				</h1>
+			</div>
+			<div class="three columns">
+				<a href="/cart" id="mini-cart"><span>View Cart </span><em>0 items | $0.00</em></a>		
+			</div>						
+			<div class="three columns">
+				<form method="get" action="/search" class="search">
+					<label for="search-input">Search</label>
+					<input type="text" placeholder="Pesquisar..." value="" name="q" id="search-input" class="input-text">
+					<button type="submit">Search</button>
+				</form>								
+			</div>			
+		</div>
+            
+		<div class="row">
+			<div class="twelve columns">
+                
+				    <a href="/pages/about-us" id="full-width-ad"><img alt="A responsive Shopify theme" src="http://cdn.shopify.com/s/files/1/0150/7492/t/6/assets/home-ad1a.png?36"></a>
+                
+			</div> 
+		</div>
+
+		<%= yield %>
+
+	</div>
+	
 
 </body>
 </html>

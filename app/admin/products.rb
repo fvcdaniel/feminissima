@@ -27,6 +27,7 @@ ActiveAdmin.register Product do
       f.input :price, :as => :number
       f.input :discount
       f.input :categoria
+      f.input :estoque
       f.input :color
       f.input :tamanho
       f.input :cover_image, :as => :file
@@ -43,6 +44,7 @@ ActiveAdmin.register Product do
       row :price
       row :discount
       row :categoria
+      row :estoque
       row :color
       row :tamanho
       row 'Imagem', :image do

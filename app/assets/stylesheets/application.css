@@ -11,3 +11,386 @@
  *= require_self
  *= require_tree .
  */
+
+/*
+***********************************   MENU TOPO   **********************************
+*/
+html {
+  background-attachment: scroll;
+  background-color: #F0FDFF;
+  background-image: url("http://cdn.shopify.com/s/files/1/0150/7492/t/6/assets/background2.png?35");
+  background-position: center top;
+  background-repeat: repeat;
+}
+body {
+  background: none repeat scroll 0 0 transparent;
+  color: #555555;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  background-color: transparent;
+  line-height: 24px;
+}
+body {
+  line-height: 18px;
+  position: relative;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0 none;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+.menu-bar {
+  background: url("http://cdn.shopify.com/s/files/1/0150/7492/t/6/assets/top-menu-bg2.png?35") repeat-x scroll center bottom transparent;
+  padding: 0 0 3px;
+  border: 0 none;
+  font: inherit;
+  margin: 0;
+  vertical-align: baseline;
+}
+.row:before, .row:after, .clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.row:after, .clearfix:after {
+  clear: both;
+}
+.row:before, .row:after, .clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+.row {
+  max-width: 960px;
+}
+.row {
+  margin: 0 auto;
+  max-width: 980px;
+  min-width: 727px;
+  width: 100%;
+}
+.row .twelve {
+  width: 100%;
+}
+.column:first-child, .columns:first-child {
+  margin-left: 0;
+}
+.column, .columns {
+  float: left;
+  margin-left: 4.4%;
+  min-height: 1px;
+  position: relative;
+}
+.menu-bar ul {
+  font-size: 11px;
+  list-style: none outside none;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+}
+.menu-bar li:first-child {
+  border: 0 none;
+}
+.menu-bar li {
+  display: inline-block;
+  float: none;
+  margin: 0;
+}
+.menu-bar ul {
+  font-size: 11px;
+  list-style: none outside none;
+  text-align: center;
+}
+.menu-bar li a {
+  color: #FFFFFF;
+  display: inline-block;
+  letter-spacing: 2px;
+  line-height: 30px;
+  padding: 3px 20px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  transition: background 300ms ease-in-out 0s;
+}
+.menu-bar li a:hover {
+  background: none repeat scroll 0 0 #37C1D7;
+  color: #FFFFFF;
+}
+a:hover, a:focus {
+  background: none repeat scroll 0 0 transparent;
+  color: #333333;
+  text-decoration: underline;
+}
+a {
+  background: none repeat scroll 0 0 transparent;
+  color: #31ABBE;
+  text-decoration: none;
+}
+
+/*
+***********************************   CLOSE MENU TOPO   **********************************
+*/
+
+.row .nine {
+  width: 73.9%;
+}
+.column:first-child, .columns:first-child {
+  margin-left: 0;
+}
+.branding {
+  min-height: 140px;
+}
+article, aside, div, dt, figcaption, footer, form, header, hgroup, html, main, nav, section {
+  display: block;
+}
+#logo {
+  margin: 20px 0;
+  text-align: left;
+}
+h1, h2, h3 {
+  font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #E74948;
+  font-family: 'Unkempt',Georgia,Utopia,'Times New Roman',Times,serif;
+  font-weight: bold;
+  text-transform: none;
+}
+.row .three {
+  width: 21.679%;
+}
+#mini-cart {
+  background: url("http://cdn.shopify.com/s/files/1/0150/7492/t/6/assets/minicart-brown-paper.png?35") no-repeat scroll right top transparent;
+}
+#mini-cart {
+  color: #42757A;
+  display: block;
+  font-size: 12px;
+  height: 42px;
+  margin: 0;
+  padding: 8px 0 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 27px;
+  width: 200px;
+}
+#mini-cart span {
+  display: none;
+}
+#mini-cart em {
+  display: block;
+  padding: 16px 0 0;
+  text-align: center;
+}
+em, i {
+  font-style: italic;
+  line-height: inherit;
+}
+[class*="column"] + [class*="column"]:last-child {
+  float: right;
+}
+.search {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #FFFFFF;
+  border-image: url("http://cdn.shopify.com/s/files/1/0150/7492/t/6/assets/thumb-bg.png?35") 4 6 6 4 fill;
+  border-style: solid;
+  border-width: 4px 6px 6px 4px;
+  margin: 4px 0 0;
+  position: absolute;
+  right: 0;
+  top: 76px;
+  width: 170px;
+}
+.search button, .search label {
+  display: none;
+}
+form label, label + input.input-text, label + textarea, label + select, label + div.dropdown, select + div.dropdown {
+  margin: 0;
+}
+form label {
+  cursor: pointer;
+  display: block;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 9px;
+}
+.search input.input-text {
+  background: url("http://cdn.shopify.com/s/files/1/0150/7492/t/6/assets/icon-search.png?35") no-repeat scroll 9px center #FFFFFF;
+  border: medium none;
+  font-family: inherit;
+  font-size: 14px;
+  margin: 0;
+  padding: 3px 0 3px 35px;
+  width: 170px;
+}
+input.input-text, textarea {
+  -moz-box-sizing: border-box;
+  width: 254px;
+}
+.search button, .search label {
+  display: none;
+}
+
+/* teste */
+#content #banners .slidecontainer {
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 630px;
+}
+#content #banners .imagelink {
+  background: url("http://cdn.shopify.com/s/files/1/0092/7632/t/3/assets/vert-div-naturale-tile.png?1458") repeat-y scroll left top transparent;
+  float: right;
+  height: 100%;
+  padding-left: 18px;
+}
+.nivo-main-image {
+  display: block !important;
+  position: relative !important;
+  width: 100% !important;
+}
+#content #banners .slidecontainer .nivo-directionNav .nivo-prevNav, #content #banners .slidecontainer .nivo-directionNav .nivo-nextNav {
+  background: url("http://cdn.shopify.com/s/files/1/0092/7632/t/3/assets/left-arr-plush2.png?1458") no-repeat scroll 0 0 transparent;
+  display: block;
+  font-size: 0;
+  height: 48px;
+  overflow: hidden;
+  text-indent: -9999em;
+  width: 26px;
+}
+#content #banners .slidecontainer .nivo-directionNav a {
+  margin-top: -24px;
+}
+#content #banners .slidecontainer .nivo-directionNav a {
+  top: 50%;
+}
+.nivo-directionNav a {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  z-index: 9;
+}
+.nivo-prevNav {
+  left: 0;
+}
+a, a:link, a:visited {
+  color: #C3505E;
+  cursor: pointer;
+  text-decoration: none;
+}
+#content #banners .slidecontainer .nivo-directionNav .nivo-nextNav {
+  background-image: url("http://cdn.shopify.com/s/files/1/0092/7632/t/3/assets/right-arr-plush2.png?1458");
+}
+.nivo-nextNav {
+  right: 0;
+}
+
+/*  Main Content */
+.row-main-content{
+	border-bottom: 1px solid #E0E0E0;
+	border-top: 1px solid #E0E0E0;
+	padding-top: 7px;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+#body {
+  margin: 0 0 20px;
+}
+#body .sidebar {
+  float: left;
+  width: 230px;
+}
+#body .sidebar span.heading {
+  background: none repeat scroll 0 0 #DFE0D5;
+  color: #333333;
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0;
+  padding: 4px 10px;
+}
+#body .main {
+  float: right;
+  overflow: auto;
+  width: 690px;
+}
+#collection .product, .collection .product {
+  float: left;
+  margin: 0 14px 14px 0;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 162px;
+}
+#collection .product .image, .collection .product .image {
+  border: 1px solid #E0E0E0;
+  margin-bottom: 10px;
+}
+
+/* menu */
+nav li ul.subcategory li a {
+  border-bottom: 1px solid #E0E0E0 !important;
+  font-size: 12px !important;
+  padding-left: 20px !important;
+}
+nav li ul.dropdown li, nav li ul li a {
+  display: block;
+  text-transform: none !important;
+}
+#body .sidebar nav li a {
+  border-bottom: 1px solid #E0E0E0;
+  color: #808080;
+  font-weight: 500;
+  padding: 3px 10px;
+  text-transform: none;
+}
+#body .sidebar nav li, #body .sidebar nav li a {
+  float: none;
+  font-size: 12px;
+  margin-left: 0;
+}
+nav ul {
+  list-style: none outside none;
+}
+#body nav li {
+  z-index: 1000 !important;
+}
+nav li {
+	display: block;
+}
+nav li a {
+  color: #333333;
+  font-size: 13px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  text-transform: none;
+  display: block;
+}
+a {
+	vertical-align: baseline;
+}
+#body .sidebar nav {
+  margin-bottom: 10px;
+}
+

@@ -383,6 +383,7 @@ pt-BR:
         available_on: "Disponível em"
         created_at: "Criada em"  
         updated_at: "Atualizada em"  
+        deleted_at: "Deletada em"  
       page:
         title: "Título"  
         body: "Corpo"  
