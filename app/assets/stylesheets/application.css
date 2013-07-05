@@ -18,7 +18,7 @@
 html {
   background-attachment: scroll;
   background-color: #F0FDFF;
-  background-image: url("http://cdn.shopify.com/s/files/1/0150/7492/t/6/assets/background2.png?35");
+  background-image: url("/img_pub/background.png");
   background-position: center top;
   background-repeat: repeat;
 }
@@ -42,7 +42,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 .menu-bar {
-  background: url("http://cdn.shopify.com/s/files/1/0150/7492/t/6/assets/top-menu-bg2.png?35") repeat-x scroll center bottom transparent;
+  background: url("/img_pub/top-menu.png") repeat-x scroll center bottom transparent;
   padding: 0 0 3px;
   border: 0 none;
   font: inherit;
