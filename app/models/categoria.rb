@@ -1,4 +1,12 @@
 class Categoria < ActiveRecord::Base
+  
+  attr_accessible :name, :categoria_id, :menu_id
+  
+  belongs_to :menu
   belongs_to :categoria
-  attr_accessible :name, :categoria_id
+
+  has_many :categorias
+
+  validates_presence_of :menu_id
+  
 end

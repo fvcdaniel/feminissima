@@ -38,43 +38,58 @@
 					<nav>
 						<span class="heading">Menu Principal</span>
 						<ul>
-							<li><a class="current" href="/">Roupas</a></li>
-							<li><a class="current" href="/">Vestidos</a></li>
-							<li><a class="current" href="/">Camisas</a></li>
-							<li><a href="/collections/frontpage">Acessórios</a>
-  								<ul class="subcategory">
-    								<li><a href="/products/">Bolsas</a></li>
-    								<li><a href="/products/">Conforto dos Pés</a></li>
-    								<li><a href="/products/">Carteiras</a></li>
-							  </ul>
-							</li>
-							<li><a href="/pages/about-us">Calças</a></li>
+							<% @catPrincipais.each.with_index do |categoria, index|%>
+
+								<% if categoria.categorias.size == 0 %>
+									<li><a class="current" href="/?categoria_id=<%=categoria.id%>"><%= categoria.name %></a></li>
+								<% else %>
+									<li><a class="current" href="/?categoria_id=<%=categoria.id%>"><%= categoria.name %></a>
+										<ul class="subcategory">
+											<% categoria.categorias.each.with_index do |subcategoria, index|%>
+												<li><a href="/?categoria_id=<%=subcategoria.id%>"><%= subcategoria.name %></a></li>
+											<% end %>
+										</ul>
+									</li>
+								<% end %>
+							<% end %>
+						</ul>
+					</nav>
+
+					<nav>
+						<span class="heading">Jóias</span>
+						<ul>
+							<% @catJoias.each.with_index do |categoria, index|%>
+
+								<% if categoria.categorias.size == 0 %>
+									<li><a class="current" href="/?categoria_id=<%=categoria.id%>"><%= categoria.name %></a></li>
+								<% else %>
+									<li><a class="current" href="/?categoria_id=<%=categoria.id%>"><%= categoria.name %></a>
+										<ul class="subcategory">
+											<% categoria.categorias.each.with_index do |subcategoria, index|%>
+												<li><a href="/?categoria_id=<%=subcategoria.id%>"><%= subcategoria.name %></a></li>
+											<% end %>
+										</ul>
+									</li>
+								<% end %>
+							<% end %>
 						</ul>
 					</nav>
 
 					<nav>
 						<span class="heading">Marcas</span>
 						<ul>
-							<li><a class="current" href="/">Hollister</a></li>
-							<li><a class="current" href="/">Albercrombie</a></li>
-							<li><a class="current" href="/">Aeropostale</a></li>
-							<li><a href="/collections/frontpage">Acessórios</a>
-  								<ul class="subcategory">
-    								<li><a href="/products/">Bolsas</a></li>
-    								<li><a href="/products/">Conforto dos Pés</a></li>
-    								<li><a href="/products/">Carteiras</a></li>
-							  </ul>
-							</li>
+							<% @marcas.each.with_index do |marca, index|%>
+								<li><a class="current" href="/?marca_id=<%=marca.id%>"><%= marca.name %></a></li>
+							<% end %>
 						</ul>
 					</nav>
 
 					<nav>
 						<span class="heading">Tamanhos</span>
 						<ul>
-							<li><a class="current" href="/">P</a></li>
-							<li><a class="current" href="/">M</a></li>
-							<li><a class="current" href="/">36</a></li>
-							<li><a class="current" href="/">38</a></li>
+							<% @tamanhos.each.with_index do |tamanho, index|%>
+								<li><a class="current" href="/?tamanho_id=<%=tamanho.id%>"><%= tamanho.name %></a></li>
+							<% end %>
 						</ul>
 					</nav>
 

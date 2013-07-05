@@ -27,6 +27,7 @@ ActiveAdmin.register Product do
       f.input :price, :as => :number
       f.input :discount
       f.input :categoria
+      f.input :marca
       f.input :estoque
       f.input :color
       f.input :tamanho
@@ -44,6 +45,7 @@ ActiveAdmin.register Product do
       row :price
       row :discount
       row :categoria
+      row :marca
       row :estoque
       row :color
       row :tamanho

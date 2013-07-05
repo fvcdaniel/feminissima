@@ -160,7 +160,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 21.679%;
 }
 #mini-cart {
-  background: url("http://cdn.shopify.com/s/files/1/0150/7492/t/6/assets/minicart-brown-paper.png?35") no-repeat scroll right top transparent;
+  /*background: url("http://cdn.shopify.com/s/files/1/0150/7492/t/6/assets/minicart-brown-paper.png?35") no-repeat scroll right top transparent;*/
+  background: url("/img_pub/minicart.png") no-repeat scroll right top transparent;
 }
 #mini-cart {
   color: #42757A;
@@ -394,3 +395,33 @@ a {
   margin-bottom: 10px;
 }
 
+
+/* for footer */
+
+footer#main-footer #flags {
+  padding-bottom: 28px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 18px;
+}
+footer#main-footer {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: transparent;
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: auto auto;
+  border-top-color: #4bb6c6;
+  border-top-style: solid;
+  border-top-width: 6px;
+  clear: both;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 10px;
+  text-align: center;
+}
